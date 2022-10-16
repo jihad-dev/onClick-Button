@@ -5,20 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Explore</title>
+    <style>
+        h1{
+            color: red;
+        }
+   .button-area{
+    background-color: yellow;
+    margin-bottom: 50px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: red;
+   }
+   .button-area-red{
+    background-color:black;
+    margin-bottom: 50px;
+    padding: 10px 30px;
+    border-radius: 50px;
+   color: white;
+   }
+    </style>
 </head>
 <body>
     <h1>Dom ar ajka special Event</h1>
-  <button onclick="console.log(7)">Click me</button>
-  <button onclick="console.log('Please Download Here')">Download</button>
+  <!-- <button onclick="console.log(7)">Click me</button>
+  <button onclick="console.log('Please Download Here')">Download</button> -->
 
 
   <br>
-  <button onclick="document.body.style.backgroundColor = 'yellow'">yellow</button>
-  <button onclick="RedColor()">Make Red</button>
+  <button class="button-area" onclick="document.body.style.backgroundColor = 'yellow'">yellow</button>
+  <br>
+  <button class="button-area-red" onclick="RedColor()">Make black</button>
  <script src="js/even.js"></script>
  <script>
     function RedColor(){
-        document.body.style.backgroundColor = 'red';
+        document.body.style.backgroundColor = 'black';
     }
  </script>
 </body>
